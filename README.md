@@ -14,7 +14,7 @@ based on the following:
   * Item Description
   * Item Category ID
 
-- An odd bug: you must type in the URL path of the search page directly in order for
+- An odd bug: you must access the search page by typing in the URL path in order for
 it to actually search. If you click to it from another page, you can fill in the search
 fields, but it won't actually submit. I'm not sure why this is.
 
