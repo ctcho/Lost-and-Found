@@ -1,0 +1,60 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  font-family: Tahoma, Geneva, sans-serif;
+  background-color: lightblue;
+}
+
+col {
+  border: 1px solid red;
+}
+
+h1 {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+h2 {
+  font-family: Verdana, Geneva, sans-serif;
+  text-size: 10px;
+}
+
+table {
+  border: 1px solid black;
+  font-family: Tahoma, Geneva, sans-serif;
+  text-align: center;
+  width: 70%;
+}
+
+th {
+  height: 40px;
+}
+
+td {
+  text-align: left;
+  height: 30px;
+}
+
+table.search_form {
+  text-align: left;
+}
+
+input[type=submit] {
+  background-color: grey;
+  font-size: 20px;
+}
+
+input[type=text], input[type=textarea] {
+  font-size: 15px;
+  background-color: lightgrey;
+}
+
+select {
+  font-size: 15px;
+  background-color: lightgrey;
+}
+
+link, link:hover {
+  font-size: 20px;
+  color: black;
+}

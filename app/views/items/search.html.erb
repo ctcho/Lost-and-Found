@@ -1,0 +1,63 @@
+<style>
+  table {
+    border:2px solid red;
+    width:30%;
+  }
+
+  h2 {
+    font-size:20px;
+  }
+
+  textarea {
+    background-color: lightgrey;
+  }
+
+  a:link {
+    border: 1px solid blue;
+    padding: 1px;
+    background-color: lightblue;
+    font-size: 20px;
+  }
+
+  body {
+    background-color: lightblue;
+  }
+</style>
+
+<h1>Search Lost and Found<h1>
+
+  <p>What are you looking for today?</p>
+<table>
+  <%= form_tag results_items_path, method: "get" do %>
+  <tr>
+    <td>
+      <h2>Search Conditions<h2>
+      <%= select_tag :and_or,  options_for_select([["ANY of these conditions", 0],
+      ["ALL of these conditions", 1]]) %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h2>Item Title</h2>
+      <%= text_field_tag(:title) %>
+      <br><br>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h2>Item Description</h2>
+      <%= text_area_tag(:description) %>
+      <br><br>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h2>Category ID</h2>
+      <%= select_tag :category_id, options_for_select([["0", 0], ["1", 1], ["2", 2],
+      ["3", 3], ["4", 4]]) %>
+      <br><br>
+    </td>
+  </tr>
+  </table>
+  <%= submit_tag "Find it!", name: nil %>
+<% end %>
